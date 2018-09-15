@@ -8,14 +8,14 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 const Dashboard = () => import('@/views/Dashboard')
 
 // Components
-//const Dashboard = () => import('@components/Dashboard')
-import HelloWorld from '@/components/HelloWorld'
+
+
 
 Vue.use(Router)
 Vue.use(BootstrapVue)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   linkActiveClass: 'open active',
   scrollBehavior: () => ({y: 0}),
   routes: [

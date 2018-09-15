@@ -25,9 +25,9 @@
         <b-nav-item class="d-md-down-none">
           <i class="icon-location-pin"></i>
         </b-nav-item>
-        <DefaultHeaderDropdownAccnt/>
+
       </b-navbar-nav>
-      <AsideToggler class="d-none d-lg-block" />
+
       <!--<AsideToggler class="d-lg-none" mobile />-->
 
     </AppHeader>
@@ -44,8 +44,21 @@
         AsideToggler,
         AppSidebar,
         SidebarToggler
+      },
+      data () {
+        return {
+          nav: nav.items
+        }
+      },
+      computed: {
+        name() {
+          return this.$route.name
+        },
+        list() {
+          return this.$route.matched.filter((route) => route.name || route.meta.label)
+        }
       }
-    }
+      }
 </script>
 
 <style scoped>
