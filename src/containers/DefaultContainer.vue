@@ -8,7 +8,7 @@
         <span class="brand-text">doodle</span>
 
       </b-link>
-
+      <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>
       <b-navbar-nav class="d-md-down-none">
         <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
@@ -35,8 +35,11 @@
 </template>
 
 <script>
+  import nav from '../_nav'
   import {Header as AppHeader, SidebarToggler, Sidebar as AppSidebar,
-    SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer, SidebarNav, Aside as AppAside, AsideToggler, Footer as TheFooter, Breadcrumb} from "@coreui/vue"
+    SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer,
+    SidebarNav, Aside as AppAside, AsideToggler, Footer as TheFooter,
+    Breadcrumb} from "@coreui/vue"
     export default {
         name: "full",
       components: {

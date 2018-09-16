@@ -11,6 +11,9 @@ export default {
 }
 </script>
 
-<style >
-
+<style lang="scss">
+  @import "~@coreui/coreui/scss/coreui.scss";
+  $fa-font-path: '~@fortawesome/scss/webfonts';
+  @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import "assets/scss/style.css";
 </style>
