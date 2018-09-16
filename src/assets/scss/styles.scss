@@ -1,0 +1,155 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Poppins:500);
+
+$green:#469408;
+$yellow:#e69a2a;
+$red:#ea6c41;
+$blue:#177ec1;
+$pink:#dc4666;
+$orange:#ff8b15;
+$gold:#c4996d;
+$silver:#83878d;
+$black:#212121;
+$grey:#878787;
+$white:#fff;
+$twitter_blue:#00aced;
+$light_grey:rgba(33,33,33,0.1);
+$light_white:rgba(255,255,255,0.1);
+$xtra_lighter_grey:rgba(33,33,33,0.05);
+$xtra_lighter_white:rgba(255,255,255,0.05);
+$font_main: 'Roboto', sans-serif;
+
+
+/****************************/
+/** Reset **/
+/****************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym,address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark,
+audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+body {
+  color: $grey;
+  font-family:$font_main;
+  font-size: 14px;
+  font-style: normal;
+  line-height:1.5;
+  background:#acb0b1;
+  overflow-x:hidden;
+}
+
+a {
+  text-decoration: none;
+  color:$black;
+}
+
+a:hover {
+  text-decoration: none;
+  color:$black;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color:$black;
+}
+
+.wrapper {
+  background: $white;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-header {
+  width: 225px;
+  padding-left: 15px;
+  height: 66px;
+  @include transition(.4s ease);
+  overflow: hidden;
+}
+
+.app-header .navbar-brand {
+  height: 66px;
+}
+
+.logo-wrap {
+  width: 225px;
+}
+
+.brand-img {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+
+.header-fixed .app-header {
+  border-bottom: 1px solid $light_grey;
+  margin-bottom: 0;
+  min-height: 66px;
+  padding: 0 15px 0 0;
+}
+
+
+.navbar.navbar-inverse,
+.navbar.navbar-inverse.navbar-fixed-top .mobile-only-brand {
+  background: #464341;
+}
+.fixed-sidebar-left .side-nav {
+  background:$white;
+}
+
+.brand-text {
+  display:inline-block;
+  font-family:'Poppins', sans-serif;
+  color:$black;
+  font-size: 21px;
+  text-transform: capitalize;
+  opacity:1;
+  visibility:visible;
+}
+
+.top-nav-search {
+
+  width:320px;
+  margin-left:25px;
+  .input-group {
+    width:100%;
+    input {
+      border-radius: 50px;
+      height:36px;
+      background:$white;
+      padding-right: 30px;
+    }
+    .input-group-btn {
+      position: absolute;
+      right: 22px;
+      top: 8px;
+      z-index: 4;
+      border-radius: 50px;
+      > .btn {
+        background: transparent none repeat scroll 0 0;
+        border: medium none;
+
+        padding: 0;
+        i {
+          color:$grey;
+          font-size:20px;
+        }
+      }
+    }
+  }
+}
+
+

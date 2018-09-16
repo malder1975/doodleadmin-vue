@@ -1,14 +1,26 @@
 <template>
   <div class="app">
+    <div class="wrapper">
     <!-- Top Menu Items -->
     <AppHeader fixed>
-
+      <div class="nav-header">
+      <div class="logo-wrap">
       <b-link class="navbar-brand" to="#">
-        <img class="navbar-brand-full" src="../assets/logo.png"  alt="Doodle">
+        <img class="brand-img" src="../assets/logo.png"  alt="Doodle">
         <span class="brand-text">doodle</span>
-
       </b-link>
+      </div>
+      </div>
       <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>
+      <b-nav-form class="top-nav-search" id="search-form" role="search">
+        <b-input-group>
+          <b-form-input type="text" placeholder="Search"></b-form-input>
+          <b-input-group-append class="input-group-btn">
+            <b-btn  variant="default"><i class="fas fa-search"></i> </b-btn>
+          </b-input-group-append>
+        </b-input-group>
+
+      </b-nav-form>
       <b-navbar-nav class="d-md-down-none">
         <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
@@ -31,6 +43,7 @@
       <!--<AsideToggler class="d-lg-none" mobile />-->
 
     </AppHeader>
+    </div>
   </div>
 </template>
 
