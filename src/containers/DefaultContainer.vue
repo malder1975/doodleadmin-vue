@@ -6,7 +6,7 @@
       <div class="nav-header">
       <div class="logo-wrap">
       <b-link class="navbar-brand" to="#">
-        <img class="brand-img" src="../assets/logo.png"  alt="Doodle">
+        <img class="brand-img" src="../assets/images/logo.png" alt="Doodle">
         <span class="brand-text">doodle</span>
       </b-link>
       </div>
@@ -19,24 +19,23 @@
             <b-btn  variant="default"><i class="fas fa-search"></i> </b-btn>
           </b-input-group-append>
         </b-input-group>
-
       </b-nav-form>
-      <b-navbar-nav class="d-md-down-none">
-        <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
-        <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
-        <b-nav-item class="px-3">Settings</b-nav-item>
-      </b-navbar-nav>
+
       <b-navbar-nav class="ml-auto">
         <b-nav-item class="d-md-down-none">
-          <i class="icon-bell"></i>
+          <i class="fas fa-cog navitem-icon"></i>
+        </b-nav-item>
+        <b-nav-item class="d-md-down-none">
+          <i class="fas fa-th navitem-icon"></i>
+        </b-nav-item>
+        <b-nav-item class="d-md-down-none">
+          <i class="fas fa-ellipsis-v navitem-icon"></i>
+        </b-nav-item>
+        <b-nav-item class="d-md-down-none">
+          <i class="fas fa-bell navitem-icon"></i>
           <b-badge pill variant="danger">5</b-badge>
         </b-nav-item>
-        <b-nav-item class="d-md-down-none">
-          <i class="icon-list"></i>
-        </b-nav-item>
-        <b-nav-item class="d-md-down-none">
-          <i class="icon-location-pin"></i>
-        </b-nav-item>
+        <HeaderDropdownAccnt></HeaderDropdownAccnt>
 
       </b-navbar-nav>
 
@@ -53,13 +52,15 @@
     SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer,
     SidebarNav, Aside as AppAside, AsideToggler, Footer as TheFooter,
     Breadcrumb} from "@coreui/vue"
+  import HeaderDropdownAccnt from './HeaderDropdownAccnt.vue'
     export default {
         name: "full",
       components: {
           AppHeader,
         AsideToggler,
         AppSidebar,
-        SidebarToggler
+        SidebarToggler,
+        HeaderDropdownAccnt
       },
       data () {
         return {

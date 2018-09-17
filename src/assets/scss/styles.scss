@@ -127,7 +127,7 @@ a:focus {
   .input-group {
     width:100%;
     input {
-      border-radius: 50px;
+      border-radius: 50px !important;
       height:36px;
       background:$white;
       padding-right: 30px;
@@ -137,11 +137,10 @@ a:focus {
       right: 22px;
       top: 8px;
       z-index: 4;
-      border-radius: 50px;
       > .btn {
         background: transparent none repeat scroll 0 0;
         border: medium none;
-
+        border-radius: 50px !important;
         padding: 0;
         i {
           color:$grey;
@@ -150,6 +149,26 @@ a:focus {
       }
     }
   }
+}
+
+.navitem-icon {
+  font-size: 20px;
+}
+
+.user-auth-img {
+  height: 43px;
+  width: 43px;
+  vertical-align: middle;
+}
+.user-online-status {
+  background: $green;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  bottom: 10px;
+  position: absolute;
+  right: 0;
+  border: $white 2px solid;
 }
 
 

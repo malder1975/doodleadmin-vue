@@ -15,7 +15,7 @@ export default {
   //@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Poppins:500);
   @import "~@coreui/coreui/scss/coreui.scss";
   $fa-font-path: '~@fortawesome/scss/webfonts';
-  @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
   @import "assets/scss/styles.scss";
   //@import "assets/scss/style.css";
 </style>
