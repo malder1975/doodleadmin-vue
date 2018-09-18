@@ -14,7 +14,7 @@
       <SidebarToggler class="d-md-down-none" display="lg"></SidebarToggler>
       <b-nav-form class="top-nav-search" id="search-form" role="search">
         <b-input-group>
-          <b-form-input type="text" placeholder="Search"></b-form-input>
+          <b-form-input type="text" placeholder="Поиск"></b-form-input>
           <b-input-group-append class="input-group-btn">
             <b-btn  variant="default"><i class="fas fa-search"></i> </b-btn>
           </b-input-group-append>

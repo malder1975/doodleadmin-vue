@@ -17,5 +17,6 @@ export default {
   $fa-font-path: '~@fortawesome/scss/webfonts';
 
   @import "assets/scss/styles.scss";
+  @import "assets/scss/animation.scss";
   //@import "assets/scss/style.css";
 </style>

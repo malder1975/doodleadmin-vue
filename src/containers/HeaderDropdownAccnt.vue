@@ -4,8 +4,20 @@
     <img src="../assets/images/user1.png" class="user-auth-img img-circle" alt="Аватар"/>
     <span class="user-online-status"></span>
   </template>\
-  <template slot="dropdown">
-
+  <template slot="dropdown" >
+    <!--transition-group :name="dropdown-flipinX"-->
+    <div class="animated flipInX">
+      <b-dropdown-item><i class="fas fa-user"></i>Профиль </b-dropdown-item>
+      <b-dropdown-item><i class="far fa-credit-card"></i>Мои финансы </b-dropdown-item>
+      <b-dropdown-item><i class="fas fa-envelope"></i>Входящие
+      <b-badge variant="success">{{ itemsCount }}</b-badge></b-dropdown-item>
+      <b-dropdown-item><i class="fas fa-cog"></i>Настройки </b-dropdown-item>
+      <b-dropdown-divider />
+      <b-dropdown-item><i class="fas fa-check color-green"></i> Доступен</b-dropdown-item>
+      <b-dropdown-divider />
+      <b-dropdown-item><i class="fas fa-power-off"></i>Выход </b-dropdown-item>
+    </div>
+    <!--/transition-group-->
   </template>
     </AppHeaderDropdown>
 </template>
@@ -16,10 +28,13 @@
   } from '@coreui/vue'
   export default {
         name: "HeaderDropdownAccnt",
-    components: {
+        components: {
           AppHeaderDropdown
+    },
+    data: () => {
+          return {itemsCount: 34}
     }
-    }
+  }
 </script>
 
 <style scoped>

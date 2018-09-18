@@ -49,6 +49,10 @@ body {
   overflow-x:hidden;
 }
 
+i.color-green {
+  color: $green;
+}
+
 a {
   text-decoration: none;
   color:$black;
