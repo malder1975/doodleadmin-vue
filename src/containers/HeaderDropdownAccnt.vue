@@ -1,10 +1,10 @@
 <template>
     <AppHeaderDropdown right no-caret>
   <template slot="header">
-    <img src="../assets/images/user1.png" class="user-auth-img img-circle" alt="Аватар"/>
+    <img src="../assets/images/user1.png" class="user-auth-img img-circle" alt="Аватар" />
     <span class="user-online-status"></span>
   </template>\
-  <template slot="dropdown" >
+  <template slot="dropdown" v-if="animateDropdown">
     <!--transition-group :name="dropdown-flipinX"-->
     <div class="animated flipInX">
       <b-dropdown-item><i class="fas fa-user"></i>Профиль </b-dropdown-item>
@@ -33,6 +33,20 @@
     },
     data: () => {
           return {itemsCount: 34}
+    },
+
+    methods: {
+      animateDropdown() {
+        if (this.$parent.$el.className == 'show') {
+          console.log('sssssssss')
+        }
+         this.$emit('show', 'is dropper')
+
+
+              //e.addClass('animated flipInX')
+
+
+          }
     }
   }
 </script>
