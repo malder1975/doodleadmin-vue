@@ -22,9 +22,9 @@
       </b-nav-form>
 
       <b-navbar-nav class="ml-auto">
-        <b-nav-item class="d-md-down-none">
-          <i class="fas fa-cog navitem-icon"></i>
-        </b-nav-item>
+
+        <AsideToggler class="d-none d-lg-block" />
+
         <b-nav-item class="d-md-down-none">
           <i class="fas fa-th navitem-icon"></i>
         </b-nav-item>
@@ -42,6 +42,13 @@
       <!--<AsideToggler class="d-lg-none" mobile />-->
 
     </AppHeader>
+      <div class="app-body">
+        <main class="main">
+          <AppAside fixed class="tab-struct">
+            <DefRightAside />
+          </AppAside>
+        </main>
+      </div>
     </div>
   </div>
 </template>
@@ -50,14 +57,18 @@
   import nav from '../_nav'
   import {Header as AppHeader, SidebarToggler, Sidebar as AppSidebar,
     SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer,
-    SidebarNav, Aside as AppAside, AsideToggler, Footer as TheFooter,
+    SidebarNav, Aside as AppAside, Footer as TheFooter,
     Breadcrumb} from "@coreui/vue"
   import HeaderDropdownAccnt from './HeaderDropdownAccnt.vue'
+  import AsideToggler from '../components/AsideToggler.vue'
+  import DefRightAside from "./DefRightAside";
     export default {
         name: "full",
       components: {
+        DefRightAside,
           AppHeader,
         AsideToggler,
+        AppAside,
         AppSidebar,
         SidebarToggler,
         HeaderDropdownAccnt

@@ -125,7 +125,6 @@ a:focus {
 }
 
 .top-nav-search {
-
   width:320px;
   margin-left:25px;
   .input-group {
@@ -138,7 +137,7 @@ a:focus {
     }
     .input-group-btn {
       position: absolute;
-      right: 22px;
+      right: 10px;
       top: 8px;
       z-index: 4;
       > .btn {
@@ -175,4 +174,99 @@ a:focus {
   border: $white 2px solid;
 }
 
+/*---- End Header -----------------------*/
+
+.card-header {
+  background-color: $white;
+  border-bottom: 1px solid $light_grey;
+}
+
+/*----- Правая панель ---------------*/
+.aside-menu {
+  >.nav-tabs {
+> .nav-tab {
+  //border-bottom: 1px solid $light_grey;
+  > .nav-item {
+    margin-right: 5px;
+    > .nav-link {
+      background: $light_grey !important;
+      border: none;
+      padding: 10px 20px;
+      color: $grey !important;
+      margin: 0;
+      border-radius: 0;
+      text-transform: capitalize;
+      font-size: 8px;
+      @include transition(0.2s ease);
+
+      &:active, &:hover, &:focus {
+        color: $black !important;
+        background: #f2f2f2 !important;
+      }
+      a {
+        color: $grey !important;
+        border: none;
+
+        a:active,a:focus,a:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+}
+}
+
+
+.add-friend {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.chat-box-wrapper {
+  justify-content: stretch;
+
+}
+.txt-grey {
+  padding: 10px;
+  color: $grey;
+  font-size: 18px;
+}
+
+.txt-dark {
+  font-size: 16px;
+  margin: 10px 25px 0 25px;
+}
+
+.chat-search {
+  width:100%;
+  border-bottom:1px solid $light_grey;
+  .input-group {
+    width: 100%;
+    input {
+      border-radius: 50px !important;
+      height:36px;
+      padding-right: 30px;
+      background:$white;
+    }
+    .input-group-btn {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      z-index: 4;
+
+      > .btn {
+        background: transparent none repeat scroll 0 0;
+        border: medium none;
+        border-radius: 50px !important;
+        padding: 0;
+        i {
+          color: $grey;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
 

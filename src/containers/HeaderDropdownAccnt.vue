@@ -38,7 +38,8 @@
     methods: {
       animateDropdown() {
         if (this.$parent.$el.className == 'show') {
-          console.log('sssssssss')
+          console.log('sssssssssnpm run dev' +
+            '')
         }
          this.$emit('show', 'is dropper')
 
